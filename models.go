@@ -36,7 +36,7 @@ func init() {
 	Families["i686"] = []string{"evansport"}
 	Families["armv5"] = []string{"88f6281", "88f6282", "88f5281"}
 	Families["armv7"] = []string{"alpine", "alpine4k", "ipq806x", "northstarplus"}
-	Families["armv8"] = []string{"aarch64","armv8","rtd1296","rtd1619b"}
+	Families["armv8"] = []string{"aarch64","armv8","rtd1296","rtd1619b","armada37xx"}
 	Families["ppc"] = []string{"ppc854x", "ppc853x", "ppc824x", "powerpc", "qoriq"}
 }
 
