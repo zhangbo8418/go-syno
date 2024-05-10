@@ -157,6 +157,7 @@ func (p *Package) populateOptionalFields(infoINI *ini.File) {
 	p.ReportURL = infoINI.Section("").Key("report_url").Value()
 	p.InstallReboot, _ = parseBoolOrYes(infoINI.Section("").Key("install_reboot").Value())
 	p.InstallDepPackages = infoINI.Section("").Key("install_dep_packages").Value()
+	p.PackagesDependencies = infoINI.Section("").Key("install_dep_packages").Value()
 	p.InstallConflictPackages = infoINI.Section("").Key("install_conflict_packages").Value()
 	p.InstUninstRestartServices = infoINI.Section("").Key("instuninst_restart_services").Value()
 	p.StartStopRestartServices = infoINI.Section("").Key("startstop_restart_services").Value()
